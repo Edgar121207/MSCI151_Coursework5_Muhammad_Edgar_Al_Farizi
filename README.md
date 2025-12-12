@@ -17,12 +17,6 @@ License
 Introduction
 This project utilizes Mixed-Integer Linear Programming (MILP) with the PuLP library in Python to optimize barista schedules for a hypothetical coffee shop. It explores five different scenarios:
 
-Baseline (Optimal Cost): Minimizes total weekly staffing cost.
-Scenario A (Close at 19:00): Optimizes cost with reduced operating hours.
-Scenario B (Part-Time Minimum 16 Hours): Optimizes cost with increased minimum hours for part-time staff.
-Fairness Variant: Minimizes the disparity in hours worked among baristas within a budget constraint.
-Skill Variant: Ensures all required skills are covered in each block while minimizing cost.
-Prerequisites
 To run this notebook, you will need:
 
 Python 3.x
@@ -65,11 +59,7 @@ Heatmaps: Visual representations of the schedules, showing assigned baristas per
 Quick Cost Summary: A pandas DataFrame summarizing the total weekly costs for all models, followed by a bar chart visualization of these costs.
 Comprehensive Recommendation Report: A detailed markdown report summarizing the findings, insights, and actionable recommendations derived from comparing all models.
 Customization
-Users can modify the initial parameters in the 'Data Preparation' section (e.g., baristas, cost, avail, minweekly, barista_skills, required_skills_per_block) to test different scenarios relevant to their specific coffee shop. New build_ and solve_ functions can be created to explore additional constraints or objectives.
+Users can modify the initial parameters in the 'Data Preparation' section 
 
 Contributing
 Feel free to fork this repository, contribute improvements, or suggest new scenarios for optimization.
-
-License
-[Optional: Add license information here, e.g., MIT License]
-
